@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// NORMAL
+$color-primary : #eee;
+$color-secondarx : #eee;
+$color-accent : #eee;
+
+// DARK MODE
+
+
+// MAIN
+div.container {
+    padding: 2em 10em;
+    background-color: $color-primary;
+
+    div.pictures {
+        width: 100%;
+        margin: 0 auto;
+        color: $color-secondarx;
+
+        // GRID
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+        justify-items: center;
+
+        img {
+            width: 100%;
+            height: 150px;;
+        }
+    }
+
+    div.output {
+        margin: 1em auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
