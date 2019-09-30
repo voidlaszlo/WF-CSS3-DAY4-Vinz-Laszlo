@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+div#images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 900px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div#images img {
+  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  div#images img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  div#images img {
+    width: 50%;
+    padding: 3em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

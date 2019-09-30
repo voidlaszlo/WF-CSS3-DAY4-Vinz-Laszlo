@@ -8,6 +8,12 @@ div.container {
   background-color: #eee;
 }
 
+@media screen and (max-width: 480px) {
+  div.container {
+    padding: 0;
+  }
+}
+
 div.container div.pictures {
   width: 100%;
   margin: 0 auto;
@@ -18,6 +24,13 @@ div.container div.pictures {
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   justify-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  div.container div.pictures {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 div.container div.pictures img {
